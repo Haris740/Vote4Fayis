@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote4Fayis</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body,
+        html {
+            background-color: #b3bfc7;
+            overflow-x: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            width: 480px;
+            height: 640px;
+            margin-bottom: 30px;
+        }
+
+        #download {
+            width: 150px;
+            height: 50px;
+            padding: auto;
+            outline: none;
+            cursor: pointer;
+            background: #002ca5;
+            border: 1px solid #002ca5;
+            color: white;
+            font-size: 17px;
+            transition: 500ms ease-in-out
+        }
+
+        #download {
+            background: transparent;
+            color: #002ca5;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" class="canvas" width="480" height="640"></canvas>
+    <br>
+    <button id="download">Download</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
